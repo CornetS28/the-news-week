@@ -10,3 +10,8 @@ This project is a reproduvtion of the website: [The News Week](http://www.newswe
 This project is available on [Project: Using Bootstrap](https://www.theodinproject.com/courses/html5-and-css3).
 
 To have a view of our output work, visit [Project: The News Week](https://CornetS28/.github.io/the-news-week)
+
+
+
+
+
