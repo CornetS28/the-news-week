@@ -701,15 +701,7 @@ ul {
   margin-right: 20px;
 }
 
-#subscribe-box a {
-  font-size: 1.3rem;
-  margin-bottom: 20px;
-}
 
-#subscribe-box a:hover {
-  text-decoration-color: #f72210;
-  color: #000;
-}
 
 #subscribe-box .btn {
   background-color: #f72210;
@@ -718,6 +710,15 @@ ul {
   color: #fff;
   font-weight: bold;
   border-radius: 0;
+}
+#subscribe-box a {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+#subscribe-box a:hover {
+  text-decoration-color: #f72210;
+  color: #000;
 }
 
 #subscribe-box .btn:hover {
