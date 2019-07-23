@@ -8,57 +8,40 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="https://kit.fontawesome.com/ccf01e6f33.js"></script>
-    
+    <link rel="stylesheet" href="index.js">
     <title>The News Week</title>
   </head>
   <body>
         <div class="main-container">
-                <header class="topHeader">
-                    <nav class="header-top navbar">
-                      <section class="currentDate"> <date>Thu, Jul 18, 2019</date> </section>
-                      <section class="subscribe">
-                        <a href="" class="link-1 white-color signin-font">SIGN IN</a>
-                        <a href="" class="lk-font subscribe-link"><strong>SUBSCRIBE ></strong></a>
-                      </section>
-                    </nav>
-                    <nav class="header-middle navbar">
-                      <a href="#" class="white-color">Newsweek</a>
-                      <a href="#"> <i class="fas fa-bars text-white"></i> </a>
-                    </nav>
-                    <nav class="header-bottom navbar navbar-expand-lg " id="nav-menu">
-            
-                      <button class="navbar-toggler" data-toggle="collapse" data-target="hb-bar">
-                          <span>  <i class="fas fa-bars text-white"></i> </span>
-                      </button>
-            
-                      <a href="#" class="navbar-brand">Newsweek</a>
-            
-                      <div class="collapse navbar-collapse" id="hb-bar">
-            
-                        <ul class="navbar-nav nav-fill">
-                          <li class="nav-link veticalLine"><a href="#">U.S.</a></li>
-                          <li class="nav-link veticalLine"><a href="#">World</a></li>
-                          <li class="nav-link veticalLine"><a href="#">Business</a></li>
-                          <li class="nav-link veticalLine"><a href="#">Tech & Science</a></li>
-                          <li class="nav-link veticalLine"><a href="#">Culture</a></li>
-                          <li class="nav-link veticalLine"><a href="#">Sports</a></li>
-                          <li class="nav-link veticalLine"><a href="#">Health</a></li>
-                          <li class="nav-link veticalLine"><a href="#">Opinion</a></li>
-                          <li class="nav-link veticalLine"><a href="#">Vantage</a></li>
-  
-                        </ul>
+              <div class="fixed-top" id="Nsticky">
+                  <div class="d-flex justify-content-between" id="navscroll">
+                      <div class="p-2">
+                          <date id="datenav">Thu, Jul 18, 2019</date>
                       </div>
-                      <div class="search-field">
-                        <input type="text" id="s-field" placeholder="Search" onfocus="changesize();"
-                                 onblur="changesize('60px');">
-                        <div class="filter-image">
-                          <h2>Search</h2>
-                        </div>
+                      <div class="p-2" id="signin">
+                          <span>SIGN IN</span><a href="#" id="signinA">SUBSCRIBE <i class="fas fa-chevron-right" id="shevron"></i></a>
+                          <i class="fas fa-bars" id="barsId"></i>
                       </div>
-                    </nav>
-                  </header>
-
-              
+                  </div>
+          
+                  <div class="logoimg" id="biglogoid"><img src="./assets/images/logo.png"></div>
+              </div>
+          
+              <nav class="header-bottom" id="navbottom">
+                  <ul class="navigation-page">
+                      <li><a>U.S.</a></li>
+                      <li><a>World</a></li>
+                      <li><a>Bisiness</a></li>
+                      <li><a>Tech & Science</a></li>
+                      <li><a>Culture</a></li>
+                      <li><a>Sports</a></li>
+                      <li><a>Health</a></li>
+                      <li><a>Opinion</a></li>
+                      <li><a>Vantage</a></li>
+                      <li>
+                        <a id="search">Search</a><i class="fas fa-search"></i></li>
+                  </ul>
+              </nav>
          
             
 
@@ -1088,6 +1071,8 @@
         
         </footer>
     </div>
+
+    <script src="index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
