@@ -663,7 +663,17 @@ body middle section     # */
   padding: 10px 0;
   line-height: 1.2;
 }
-
+article {
+  width: 100%;
+}
+article img {
+  float: left;
+  width: 50%;
+}
+article title{
+  float: right;
+  width: 50%;
+}
 .news-categories .groupItem:first-child {
   padding-top: 0;
   border-top: 0;
@@ -985,4 +995,81 @@ ul {
   margin-right: 15px;
   padding-top: 20px;
   border-top: 1px solid #ccc;
+}
+
+.feature2 .category{
+  height: 33px;
+  padding: 0 5px 0 5px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background-color: rgba(255,255,255,.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.feature2 .image a{
+  display: block;
+}
+
+.feature2 .category a{
+  color: #f72210;
+  
+}
+.feature2 .wrap{
+  position: relative;
+}
+
+.feature2 .h2>a,
+.feature2 .clearfix h4 a,
+.opinion h4 a,
+.magazine-features h5 a{
+  text-decoration-color: red;
+  color: black;
+  font-weight: 700;
+  font-size: 22px;
+  
+}
+.feature2 h1{
+  line-height: 0.8;
+}
+.feature2 .summary{
+  font-size: 13px;
+}
+
+.feature2 .clearfix .image{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.feature2 .clearfix img{
+    width: 135px;
+    height: 90px;
+}
+.feature2 .clearfix h4 a,
+.opinion h4 a{
+    font-size: 17px;
+}
+.feature2 .clearfix h4,
+.opinion h4{
+    line-height: 0.7;
+}
+.featured-more .feature2 article{
+    border-top: 1px solid #ddd;
+    padding: 14px 0;
+}
+
+.block-title {
+  color: #f72210;
+  font-style: bold;
+}
+article:hover{
+    color: #f72210; 
+}
+
+.editor .summary:hover{
+  text-decoration-color: none;
 }
