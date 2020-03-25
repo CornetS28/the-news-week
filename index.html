@@ -6,60 +6,1079 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/favicons/favicon-32x32.png" sizes="32x32">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <script src="https://kit.fontawesome.com/ccf01e6f33.js"></script>
-    
+    <link rel="stylesheet" href="index.js">
     <title>The News Week</title>
   </head>
   <body>
         <div class="main-container">
-                <header class="topHeader">
-                    <nav class="header-top navbar">
-                      <section class="currentDate"> <date>Thu, Jul 18, 2019</date> </section>
-                      <section class="subscribe">
-                        <a href="" class="link-1 white-color signin-font">SIGN IN</a>
-                        <a href="" class="lk-font subscribe-link"><strong>SUBSCRIBE ></strong></a>
-                      </section>
-                    </nav>
-                    <nav class="header-middle navbar">
-                      <a href="#" class="white-color">Newsweek</a>
-                      <a href="#"> <i class="fas fa-bars text-white"></i> </a>
-                    </nav>
-                    <nav class="header-bottom navbar navbar-expand-lg " id="nav-menu">
-            
-                      <button class="navbar-toggler" data-toggle="collapse" data-target="hb-bar">
-                          <span>  <i class="fas fa-bars text-white"></i> </span>
-                      </button>
-            
-                      <a href="#" class="navbar-brand">Newsweek</a>
-            
-                      <div class="collapse navbar-collapse" id="hb-bar">
-            
-                        <ul class="navbar-nav nav-fill">
-                          <li class="nav-link veticalLine"><a href="#">U.S.</a></li>
-                          <li class="nav-link veticalLine"><a href="#">World</a></li>
-                          <li class="nav-link veticalLine"><a href="#">Business</a></li>
-                          <li class="nav-link veticalLine"><a href="#">Tech & Science</a></li>
-                          <li class="nav-link veticalLine"><a href="#">Culture</a></li>
-                          <li class="nav-link veticalLine"><a href="#">Sports</a></li>
-                          <li class="nav-link veticalLine"><a href="#">Health</a></li>
-                          <li class="nav-link veticalLine"><a href="#">Opinion</a></li>
-                          <li class="nav-link veticalLine"><a href="#">Vantage</a></li>
-  
-                        </ul>
+              <div class="fixed-top" id="Nsticky">
+                  <div class="d-flex justify-content-between" id="navscroll">
+                      <div class="p-2">
+                          <date id="datenav">Thu, Jul 18, 2019</date>
                       </div>
-                      <div class="search-field">
-                        <input type="text" id="s-field" placeholder="Search" onfocus="changesize();"
-                                 onblur="changesize('60px');">
-                        <div class="filter-image">
-                          <h2>Search</h2>
+                      <div class="p-2" id="signin">
+                          <span>SIGN IN</span><a href="#" id="signinA">SUBSCRIBE </a>
+                          <i class="fas fa-bars" id="barsId"></i>
+                      </div>
+                  </div>
+          
+                  <div class="logoimg" id="biglogoid"><img src="./assets/images/logo.png" alt=""></div>
+              </div>
+          
+              <nav class="header-bottom" id="navbottom">
+                  <ul class="navigation-page">
+                      <li><a>U.S.</a></li>
+                      <li><a>World</a></li>
+                      <li><a>Bisiness</a></li>
+                      <li><a>Tech & Science</a></li>
+                      <li><a>Culture</a></li>
+                      <li><a>Sports</a></li>
+                      <li><a>Health</a></li>
+                      <li><a>Opinion</a></li>
+                      <li><a>Vantage</a></li>
+                      <li>
+                        <a id="search">Search</a><i class="fas fa-search"></i>
+                      </li>
+                  </ul>
+              </nav>
+         
+            
+
+              <div class="inner-container">
+                <div class="row top-news">
+                  <div class="col-12 col-md-5 col-lg order-2 order-md-1 featured">
+
+                    <!-- %%%%%%%%%%%%%%% FEATURE STORIESSection %%%%%%%%%%% -->
+                    <section class="features-stories">
+                      <h2>FEATURE STORIES</h2>
+                      <div class="card">
+                        <img class="card-img-top" src="./assets/images/cancer-banner.jpg" alt="">
+                        <div class="card-body">
+                            <div class="category"><a href="">HEALTH</a></div>
+                          <h3 class="card-title"><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h3>
+                          <p class="card-text">Working with Statista Inc., the globally recognized data research company, Newsweek has produced an authoritative list of America's Best Business Tools</p>
                         </div>
                       </div>
-                    </nav>
-                  </header>
-                  
 
+                      <div class="card">
+                          <img class="card-img-top" src="./assets/images/cancer-banner.jpg" alt="">
+                          <div class="card-body">
+                              <div class="category"><a href="">HEALTH</a></div>
+                            <h3 class="card-title"><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h3>
+                            <p class="card-text">Working with Statista Inc., the globally recognized data research company, Newsweek has produced an authoritative list of America's Best Business Tools</p>
+                          </div>
+                      </div>
+
+                     <div class="card">
+                         <img class="cardImg" src="./assets/images/cancer-banner.jpg" alt="">
+                         <div class="card-body">
+                             <div class="category"><a href="">HEALTH</a></div>
+                           <h3 class="card-title"><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h3>
+                           <p class="card-text">Working with Statista Inc., the globally recognized data research company, Newsweek has produced an authoritative list of America's Best Business Tools</p>
+                         </div>
+                     </div>
+                      <div class="card">
+                          <img class="cardImg" src="./assets/images/cancer-banner.jpg" alt="">
+                          <div class="card-body">
+                              <div class="category"><a href="">HEALTH</a></div>
+                            <h3 class="card-title"><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h3>
+                            <p class="card-text">Working with Statista Inc., the globally recognized data research company, Newsweek has produced an authoritative list of America's Best Business Tools</p>
+                          </div>
+                      </div>
+
+                      <div class="card">
+                          <img class="cardImg" src="./assets/images/cancer-banner.jpg" alt="">
+                          <div class="card-body">
+                              <div class="category"><a href="">HEALTH</a></div>
+                            <h3 class="card-title"><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h3>
+                            <p class="card-text">Working with Statista Inc., the globally recognized data research company, Newsweek has produced an authoritative list of America's Best Business Tools</p>
+                          </div>
+                      </div>
+
+                      <div class="card">
+                          <img class="cardImg" src="./assets/images/cancer-banner.jpg" alt="">
+                          <div class="card-body">
+                              <div class="category"><a href="">HEALTH</a></div>
+                            <h3 class="card-title"><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h3>
+                            <p class="card-text">Working with Statista Inc., the globally recognized data research company, Newsweek has produced an authoritative list of America's Best Business Tools</p>
+                          </div>
+                      </div>
+
+                      <div class="card">
+                          <img class="cardImg" src="./assets/images/cancer-banner.jpg" alt="">
+                          <div class="card-body">
+                              <div class="category"><a href="">HEALTH</a></div>
+                            <h3 class="card-title"><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h3>
+                            <p class="card-text">Working with Statista Inc., the globally recognized data research company, Newsweek has produced an authoritative list of America's Best Business Tools</p>
+                          </div>
+                      </div>
+
+                      <div class="card">
+                          <img class="cardImg" src="./assets/images/cancer-banner.jpg" alt="">
+                          <div class="card-body">
+                              <div class="category"><a href="">HEALTH</a></div>
+                            <h3 class="card-title"><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h3>
+                            <p class="card-text">Working with Statista Inc., the globally recognized data research company, Newsweek has produced an authoritative list of America's Best Business Tools</p>
+                          </div>
+                      </div>
+
+                      <div class="card">
+                          <img class="cardImg" src="./assets/images/cancer-banner.jpg" alt="">
+                          <div class="card-body">
+                              <div class="category"><a href="">HEALTH</a></div>
+                            <h3 class="card-title"><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h3>
+                            <p class="card-text">Working with Statista Inc., the globally recognized data research company, Newsweek has produced an authoritative list of America's Best Business Tools</p>
+                          </div>
+                      </div>
+
+                      <div class="card">
+                          <img class="cardImg" src="./assets/images/cancer-banner.jpg" alt="">
+                          <div class="card-body">
+                              <div class="category"><a href="">HEALTH</a></div>
+                            <h3 class="card-title"><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h3>
+                            <p class="card-text">"The responsibility for the possible catastrophic consequences will rest with the United States," Russia's top diplomat warned.</p>
+                          </div>
+                      </div>
+
+                      <div class="card">
+                          <img class="cardImg" src="./assets/images/cancer-banner.jpg" alt="">
+                          <div class="card-body">
+                              <div class="category"><a href="">HEALTH</a></div>
+                            <h3 class="card-title"><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h3>
+                            <p class="card-text">"The responsibility for the possible catastrophic consequences will rest with the United States," Russia's top diplomat warned.</p>
+                          </div>
+                      </div>
+
+                      <div class="card">
+                          <img class="cardImg" src="./assets/images/cancer-banner.jpg" alt="">
+                          <div class="card-body">
+                              <div class="category"><a href="">HEALTH</a></div>
+                            <h3 class="card-title"><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h3>
+                            <p class="card-text">"The responsibility for the possible catastrophic consequences will rest with the United States," Russia's top diplomat warned.</p>
+                          </div>
+                      </div>
+
+                      <div class="card">
+                          <img class="cardImg" src="./assets/images/cancer-banner.jpg" alt="">
+                          <div class="card-body">
+                              <div class="category"><a href="">HEALTH</a></div>
+                            <h3 class="card-title"><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h3>
+                            <p class="card-text">"The responsibility for the possible catastrophic consequences will rest with the United States," Russia's top diplomat warned.</p>
+                          </div>
+                      </div>
+
+                      <div class="card">
+                          <img class="cardImg" src="./assets/images/cancer-banner.jpg" alt="">
+                          <div class="card-body">
+                              <div class="category"><a href="">HEALTH</a></div>
+                            <h3 class="card-title"><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h3>
+                            <p class="card-text">"The responsibility for the possible catastrophic consequences will rest with the United States," Russia's top diplomat warned.</p>
+                          </div>
+                      </div>
+
+                      <div class="card">
+                          <img class="cardImg" src="./assets/images/cancer-banner.jpg" alt="">
+                          <div class="card-body">
+                              <div class="category"><a href="">HEALTH</a></div>
+                            <h3 class="card-title"><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h3>
+                            <p class="card-text">"The responsibility for the possible catastrophic consequences will rest with the United States," Russia's top diplomat warned.</p>
+                          </div>
+                       </div>
+                     
+                    </div>
+                </section>
+
+                 
+          
+                  <div class="col-12 col-md-7 col-lg-5 order-1 order-md-2 top-story">
+                    <div class="most-recent-story">
+                      <h2>Top Story</h2>
+                      <div class="card">
+                        <img class="cardImg" src="./assets/images/image1.jpg" alt="">
+                        <div class="card-body">
+                          <h3 class="card-title"><a href="#">Two Republicans Pick a New Target: The 9/11 Victims Fund</a></h3>
+                          <p class="card-text">"I reserve the right to object," said Kentucky Senator Rand Paul as he put an end to calls for a unanimous voice vote to renew the fund.</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- %%%%%%%%%%%%%%% Opinions Section %%%%%%%%%%% -->
+                    <section class="more-stories">
+                      <h2>More Stories</h2>
+                      <ul class="list-group more-stories">
+                        <li class="groupItem">
+                          <img src="./assets/images/smallimage1.jpg"  alt="">
+                          <a href="#"><strong>Russia Warns U.S. to Stop Provoking Iran: 'A Single Match Can Start a Fire</strong></a>
+                          <p class="description">"The responsibility for the possible catastrophic consequences will rest with the United States," Russia's top diplomat warned.</p>
+                        </li>
+
+                        <li class="groupItem">
+                          <img src="./assets/images/smallimage1.jpg"  alt="">
+                          <a href="#"><strong>Russia Warns U.S. to Stop Provoking Iran: 'A Single Match Can Start a Fire</strong></a>
+                          <p class="description">"The responsibility for the possible catastrophic consequences will rest with the United States," Russia's top diplomat warned.</p>
+                        </li>
+
+                        <li class="groupItem">
+                          <img src="./assets/images/smallimage1.jpg"  alt="">
+                          <a href="#"><strong>Russia Warns U.S. to Stop Provoking Iran: 'A Single Match Can Start a Fire</strong></a>
+                          <p class="description">"The responsibility for the possible catastrophic consequences will rest with the United States," Russia's top diplomat warned.</p>
+                        </li>
+
+                        <li class="groupItem">
+                          <img src="./assets/images/smallimage1.jpg"  alt="">
+                          <a href="#"><strong>Russia Warns U.S. to Stop Provoking Iran: 'A Single Match Can Start a Fire</strong></a>
+                          <p class="description">"The responsibility for the possible catastrophic consequences will rest with the United States," Russia's top diplomat warned.</p>
+                        </li>
+
+                        <li class="groupItem">
+                          <img src="./assets/images/smallimage1.jpg"  alt="">
+                          <a href="#"><strong>Russia Warns U.S. to Stop Provoking Iran: 'A Single Match Can Start a Fire</strong></a>
+                          <p class="description">"The responsibility for the possible catastrophic consequences will rest with the United States," Russia's top diplomat warned.</p>
+                        </li>
+
+                        <li class="groupItem">
+                          <img src="./assets/images/smallimage1.jpg"  alt="">
+                          <a href="#"><strong>Russia Warns U.S. to Stop Provoking Iran: 'A Single Match Can Start a Fire</strong></a>
+                          <p class="description">"The responsibility for the possible catastrophic consequences will rest with the United States," Russia's top diplomat warned.</p>
+                        </li>
+
+                        <li class="groupItem">
+                          <img src="./assets/images/smallimage1.jpg"  alt="">
+                          <a href="#"><strong>Russia Warns U.S. to Stop Provoking Iran: 'A Single Match Can Start a Fire</strong></a>
+                          <p class="description">"The responsibility for the possible catastrophic consequences will rest with the United States," Russia's top diplomat warned.</p>
+                        </li>
+
+                        <li class="groupItem">
+                          <img src="./assets/images/smallimage1.jpg"  alt="">
+                          <a href="#"><strong>Russia Warns U.S. to Stop Provoking Iran: 'A Single Match Can Start a Fire</strong></a>
+                          <p class="description">"The responsibility for the possible catastrophic consequences will rest with the United States," Russia's top diplomat warned.</p>
+                        </li>
+
+                        <li class="groupItem">
+                          <img src="./assets/images/smallimage1.jpg"  alt="">
+                          <a href="#"><strong>Russia Warns U.S. to Stop Provoking Iran: 'A Single Match Can Start a Fire</strong></a>
+                          <p class="description">"The responsibility for the possible catastrophic consequences will rest with the United States," Russia's top diplomat warned.</p>
+                        </li>
+                      
+                      </ul>
+                   </section>
+                </div>
+          
+                <!-- %%%%%%%%%%%%%%% Opinions Section %%%%%%%%%%% -->
+              </section class="opinion-details">
+                <div class="col-12 col-lg order-3 order-md-3 opinion">
+                    <h2>Opinion</h2>
+                    <ul class="list-group opinions">
+                      <li class="groupItem">
+                        <img src="./assets/images/mathaleft.png" alt="">
+                        <a href="#">Justice Ain't Much If You Can't Afford It. A Civil Law Overhaul Is Overdue</a>
+                        <div class="byline">By <a href="#">MARTHA BERGMARK</a></div>
+                      </li>
+          
+                      <li class="groupItem">
+                        <img src="./assets/images/mathaleft.png" alt="">
+                        <a href="#">Justice Ain't Much If You Can't Afford It. A Civil Law Overhaul Is Overdue</a>
+                        <div class="byline">By <a href="#"> MARTHA BERGMARK</a></div>
+                      </li>
+          
+                      <li class="groupItem">
+                        <img src="./assets/images/mathaleft.png" alt="">
+                        <a href="#">Justice Ain't Much If You Can't Afford It. A Civil Law Overhaul Is Overdue</a>
+                        <div class="byline">By <a href="#">MARTHA BERGMARK</a></div>
+                      </li>
+          
+                      <li class="groupItem">
+                        <img src="./assets/images/mathaleft.png" alt="">
+                        <a href="#">Justice Ain't Much If You Can't Afford It. A Civil Law Overhaul Is Overdue</a>
+                        <div class="byline">By <a href="#">MARTHA BERGMARK</a></div>
+                      </li>
+          
+                      <li class="groupItem">
+                        <img src="./assets/images/mathaleft.png" alt="">
+                        <a href="#">Justice Ain't Much If You Can't Afford It. A Civil Law Overhaul Is Overdue</a>
+                        <div class="byline">By <a href="#">MARTHA BERGMARK</a></div>
+                      </li>
+                      <li class="groupItem">
+                          <img src="./assets/images/mathaleft.png" alt="">
+                          <a href="#">Justice Ain't Much If You Can't Afford It. A Civil Law Overhaul Is Overdue</a>
+                          <div class="byline">By <a href="#">MARTHA BERGMARK</a></div>
+                      </li>
+
+                      <li class="groupItem">
+                          <img src="./assets/images/mathaleft.png" alt="">
+                          <a href="#">Justice Ain't Much If You Can't Afford It. A Civil Law Overhaul Is Overdue</a>
+                          <div class="byline">By <a href="#">MARTHA BERGMARK</a></div>
+                      </li>
+          
+                      <li class="groupItem">
+                        <img src="./assets/images/mathaleft.png" alt="">
+                        <a href="#">What Happened Before the Big Bang?</a>
+                        <div class="byline">By <a href="#">MARTHA BERGMARK</a></div>
+                      </li>
+                    </ul>
+                  </section>
+                
+
+                <!-- %%%%%%%%%%%%%%% LatestNews Section %%%%%%%%%%% -->
+                </section class="latest-news-section">
+                  <div id="sticky-wrapper">
+                      <h2>Latest News</h2>
+                      
+                      <ul class="list-group latest-news">
+                        <article>
+                          <li class="groupItem">
+                            <img src="./assets/images/smallimage1.jpg"  alt="">
+                            <a id="title" href="#">'RHOBH' Season 9 Cast Choose Between Kyle and Lisa</a>
+                          </li>
+                      </article>
+
+                      <article>
+                          <li class="groupItem">
+                            <img src="./assets/images/smallimage1.jpg"  alt="">
+                            <a id="title" href="#">'RHOBH' Season 9 Cast Choose Between Kyle and Lisa</a>
+                          </li>
+                      </article>
+
+                      <article>
+                          <li class="groupItem">
+                            <img src="./assets/images/smallimage1.jpg"  alt="">
+                            <a id="title" href="#">'RHOBH' Season 9 Cast Choose Between Kyle and Lisa</a>
+                          </li>
+                      </article>
+
+                      <article>
+                          <li class="groupItem">
+                            <img src="./assets/images/smallimage1.jpg"  alt="">
+                            <a id="title" href="#">'RHOBH' Season 9 Cast Choose Between Kyle and Lisa</a>
+                          </li>
+                      </article>
+
+                      <article>
+                          <li class="groupItem">
+                            <img src="./assets/images/smallimage1.jpg"  alt="">
+                            <a id="title" href="#">'RHOBH' Season 9 Cast Choose Between Kyle and Lisa</a>
+                          </li>
+                      </article>
+
+                      <article>
+                          <li class="groupItem">
+                            <img src="./assets/images/smallimage1.jpg"  alt="">
+                            <a id="title" href="#">'RHOBH' Season 9 Cast Choose Between Kyle and Lisa</a>
+                          </li>
+                      </article>
+
+                      <article>
+                          <li class="groupItem">
+                            <img src="./assets/images/smallimage1.jpg"  alt="">
+                            <a id="title" href="#">'RHOBH' Season 9 Cast Choose Between Kyle and Lisa</a>
+                          </li>
+                      </article>
+
+                      <article>
+                          <li class="groupItem">
+                            <img src="./assets/images/smallimage1.jpg"  alt="">
+                            <a id="title" href="#">'RHOBH' Season 9 Cast Choose Between Kyle and Lisa</a>
+                          </li>
+                      </article>
+                    
+                     </ul>
+                    <div class="container newsletter">
+                    <div class="clearfix">
+                    <img src="images/icon.png" class="float-left" alt="">
+                    <span>sign up for our newsletter</span>
+                  </div>
+                  <button class="btn">sign up</button><br>
+                  <a href="#">Update your preferences</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+          
+              <section class="in-the-magazine">
+                  <div class="magazine">
+                    <div class="row top">
+                      <div class="col-sm-3" id="cover-magazine">
+                        <div class="wrap cover-footer">
+                          <div class="picture">
+                            <a href=""> <img src="images/magazine-001.jpg" alt=""></a>
+                          </div>
+                          <div class="category"> <a href="">July 24 Issue</a> </div>
+                        </div>
+                        <a href="#" class="lk-all-features">See All Features ></a>
+                      </div>
+
+                      <div class="col-sm-9" id="articles">
+                        <div class="n-title">
+                            <span class="icon-n"></span>
+                         <h3><strong> In The Magazine </strong></h3>
+                        </div>
+                        
+                        <div class="row wrap mag-feat">
+                          <article class="col-sm-4">
+                            <div>
+                              <a href="#">
+                                <picture width="391" height="261">
+                                  <img src="./assets/images/michael-caligiuri.jpg" alt="">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="category">
+                              <span class="mag-cat">Feature</span>
+                              <span class="cat"> <a href="#">HEALTH</a></span>
+                            </div>
+                            <h5> <a href=""> Precision Medicine Is Crushing Once-Untreatable Cancers</a> </h5>
+                          </article>
+
+                          <article class="col-sm-4">
+                            <div>
+                              <a href="">
+                                <picture width="391" height="261">
+                                  <img src="./assets/images/michael-caligiuri.jpg" alt="">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="category">
+                              <span class="mag-cat">Feature</span>
+                              <span class="cat"><a href="#">HEALTH</a></span>
+                            </div>
+                            <h5><a href="#">‘Precision Medicine Is Crushing Once-Untreatable Cancers</a></h5>
+                          </article>
+
+                          <article class="col-sm-4">
+                            <div>
+                              <a href="#">
+                                <picture width="391" height="261">
+                                  <img src="./assets/images/michael-caligiuri.jpg" alt="">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="category">
+                              <span class="mag-cat">Feature</span>
+                              <span class="cat"> <a href="#">HEALTH</a></span>
+                            </div>
+                              <h5><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h5>
+                          </article>
+                      </div> 
+                    </div>
+                  </section>
+
+                  <section class="other">
+                    <div class="row bottom">
+                        <article class="col-sm-3">
+                          <div>
+                            <a href="#">
+                              <picture width="391" height="261">
+                                 <img src="./assets/images/michael-caligiuri.jpg" alt="">
+                              </picture>
+                            </a>
+                          </div>
+                          <div class="category">
+                              <span class="mag-cat">Feature</span>
+                              <span class="cat"> <a href="#">HEALTH</a></span>
+                            </div>
+                            <h5><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h5>
+                        </article>
+  
+                        <article class="col-sm-3">
+                            <div>
+                              <a href="#">
+                                <picture width="391" height="261">
+                                   <img src="./assets/images/michael-caligiuri.jpg" alt="">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="category">
+                                <span class="mag-cat">Feature</span>
+                                <span class="cat"> <a href="#">HEALTH</a></span>
+                              </div>
+                              <h5><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h5>
+                        </article>
+
+                        <article class="col-sm-3">
+                            <div>
+                              <a href="#">
+                                <picture width="391" height="261">
+                                   <img src="./assets/images/michael-caligiuri.jpg" alt="">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="category">
+                                <span class="mag-cat">Feature</span>
+                                <span class="cat"> <a href="#">HEALTH</a></span>
+                              </div>
+                              <h5><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h5>
+                        </article>
+
+                        <article class="col-sm-3">
+                            <div>
+                              <a href="#">
+                                <picture width="391" height="261">
+                                   <img src="./assets/images/michael-caligiuri.jpg" alt="">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="category">
+                                <span class="mag-cat">Feature</span>
+                                <span class="cat"> <a href="#">HEALTH</a></span>
+                              </div>
+                              <h5><a href="#">Precision Medicine Is Crushing Once-Untreatable Cancers</a></h5>
+                        </article>
+                      </div>
+                    </div>
+                </section>
+  
+                <section class="in-the-magazine-next" id="next-mag">
+                  <div class="row bottom">
+                    <article class="col-sm-3">
+                      <div>
+                        <a href="#">
+                          <picture width="391" height="261">
+                            <img src="./assets/images/cul-woodstock-01.jpg"  alt="">
+                          </picture>
+                        </a>
+                      </div>
+                      <div class="category">
+                        <span class="mag-cat">Features</span>
+                        <span class="cat"><a href="#">CULTURE</a></span>
+                      </div>
+                      <H5><a href="#">Russia Making Moves in 'Battle for Africa</a></H5>
+                    </article>
+                    <article class="col-sm-3">
+                      <div>
+                        <a href="">
+                          <picture width="391" height="261">
+                            <img src="./assets/images/cul-woodstock-01.jpg" alt="">
+                          </picture>
+                        </a>
+                      </div>
+                      <div class="category">
+                        <span class="mag-cat">Features</span>
+                        <span class="cat"><a href="#">CULTURE</a></span>
+                      </div>
+                      <H5><a href="#">Russia Making Moves in 'Battle for Africa</a></H5>
+                    </article>
+                    <article class="col-sm-3">
+                      <div>
+                        <a href="#">
+                          <picture width="391" height="261">
+                            <img src="./assets/images/cul-woodstock-01.jpg" alt="">
+                          </picture>
+                        </a>
+                      </div>
+                      <div class="category">
+                        <span class="mag-cat">Features</span>
+                        <spa class="cat"><a href="#">CULTURE</a></spa>
+                      </div>
+                      <H5><a href="#">Constance Wu on 'Crazy Rich Asians</a></H5>
+                    </article>
+                    
+                    <article class="col-sm-3">
+                      <div class="wrap big-shots">
+                        <picture  width="1035" height="690">
+                          <img src="./assets/images/cul-woodstock-01.jpg" alt="">
+                        </picture>
+                        <div class="category" id="upper-href"> <a href="">CULTURE</a> </div>
+                      </div>
+                      <h5><a href="">Highlights (and Lowlights) of Woodstock at 50</a></h5>
+                    </article>
+                  </div>
+                </div>
+              </section>
+
+            
+              <!-- %%%%%%%%%% EITOR'S PICK %%%%%%%%%% -->
+              <section class="editor">
+                  <div class="editors-pick">
+                    <div class="n-title">                  
+                      <span class="icon-n"></span>
+                      <h5><strong>EITOR'S PICK</strong></h5>
+                      <hr />
+                    </div>
+
+                    <div class="row bottom" id="editorP">
+                        <article class="col-sm-3">
+                          <div>
+                            <a href="#">
+                              <picture width="391" height="261">
+                                <img src="./assets/images/paul-george-los.jpg"  alt="">
+                              </picture>
+                            </a>
+                          </div>
+                          <div class="category">
+                            <span class="cat"><a href="#">SPORT</a></span>
+                          </div>
+                          <H5><a href="#">Death Threats Made Against Oklahoma City Thunder After Paul George Trade</a></H5>
+                          <div class="summary">
+                              The All-Star guard was traded to the Los Angeles Clippers in a blockbuster deal last month after being recruited by Kawhi Leonard.
+                          </div>
+                        </article>
+
+                        <article class="col-sm-3">
+                            <div>
+                              <a href="#">
+                                <picture width="391" height="261">
+                                  <img src="./assets/images/paul-george-los.jpg"  alt="">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="category">
+                              <span class="cat"><a href="#">SPORT</a></span>
+                            </div>
+                            <H5><a href="#">Death Threats Made Against Oklahoma City Thunder After Paul George Trade</a></H5>
+                            <div class="summary">
+                                The All-Star guard was traded to the Los Angeles Clippers in a blockbuster deal last month after being recruited by Kawhi Leonard.
+                            </div>
+                          </article>
+
+                          <article class="col-sm-3">
+                              <div>
+                                <a href="#">
+                                  <picture width="391" height="261">
+                                    <img src="./assets/images/paul-george-los.jpg"  alt="">
+                                  </picture>
+                                </a>
+                              </div>
+                              <div class="category">
+                                <span class="cat"><a href="#">SPORT</a></span>
+                              </div>
+                              <H5><a href="#">Death Threats Made Against Oklahoma City Thunder After Paul George Trade</a></H5>
+                              <div class="summary">
+                                  The All-Star guard was traded to the Los Angeles Clippers in a blockbuster deal last month after being recruited by Kawhi Leonard.
+                              </div>
+                            </article>
+
+                            <article class="col-sm-3">
+                              <div>
+                                <a href="#">
+                                  <picture width="391" height="261">
+                                    <img src="./assets/images/paul-george-los.jpg"  alt="">
+                                  </picture>
+                                </a>
+                              </div>
+                              <div class="category">
+                                <span class="cat"><a href="#">SPORT</a></span>
+                              </div>
+                              <H5><a href="#">Death Threats Made Against Oklahoma City Thunder After Paul George Trade</a></H5>
+                              <div class="summary">
+                                  The All-Star guard was traded to the Los Angeles Clippers in a blockbuster deal last month after being recruited by Kawhi Leonard.
+                              </div>
+                            </article>
+
+                            <article class="col-sm-3">
+                                <div>
+                                  <a href="#">
+                                    <picture width="391" height="261">
+                                      <img src="./assets/images/paul-george-los.jpg"  alt="">
+                                    </picture>
+                                  </a>
+                                </div>
+                                <div class="category">
+                                  <span class="cat"><a href="#">SPORT</a></span>
+                                </div>
+                                <H5><a href="#">Death Threats Made Against Oklahoma City Thunder After Paul George Trade</a></H5>
+                                <div class="summary">
+                                    The All-Star guard was traded to the Los Angeles Clippers in a blockbuster deal last month after being recruited by Kawhi Leonard.
+                                </div>
+                            </article>
+
+                            <article class="col-sm-3">
+                                <div>
+                                  <a href="#">
+                                    <picture width="391" height="261">
+                                      <img src="./assets/images/paul-george-los.jpg"  alt="">
+                                    </picture>
+                                  </a>
+                                </div>
+                                <div class="category">
+                                  <span class="cat"><a href="#">SPORT</a></span>
+                                </div>
+                                <H5><a href="#">Death Threats Made Against Oklahoma City Thunder After Paul George Trade</a></H5>
+                                <div class="summary">
+                                    The All-Star guard was traded to the Los Angeles Clippers in a blockbuster deal last month after being recruited by Kawhi Leonard.
+                                </div>
+                              </article>
+
+                              <article class="col-sm-3">
+                                  <div>
+                                    <a href="#">
+                                      <picture width="391" height="261">
+                                        <img src="./assets/images/paul-george-los.jpg"  alt="">
+                                      </picture>
+                                    </a>
+                                  </div>
+                                  <div class="category">
+                                    <span class="cat"><a href="#">SPORT</a></span>
+                                  </div>
+                                  <H5><a href="#">Death Threats Made Against Oklahoma City Thunder After Paul George Trade</a></H5>
+                                  <div class="summary">
+                                      The All-Star guard was traded to the Los Angeles Clippers in a blockbuster deal last month after being recruited by Kawhi Leonard.
+                                  </div>
+                              </article>
+
+                              <article class="col-sm-3">
+                                  <div>
+                                    <a href="#">
+                                      <picture width="391" height="261">
+                                        <img src="./assets/images/paul-george-los.jpg"  alt="">
+                                      </picture>
+                                    </a>
+                                  </div>
+                                  <div class="category">
+                                    <span class="cat"><a href="#">SPORT</a></span>
+                                  </div>
+                                  <H5><a href="#">Death Threats Made Against Oklahoma City Thunder After Paul George Trade</a></H5>
+                                  <div class="summary">
+                                      The All-Star guard was traded to the Los Angeles Clippers in a blockbuster deal last month after being recruited by Kawhi Leonard.
+                                  </div>
+                              </article>
+                        </div>
+                   </section>
+
+      
+                      
+
+
+                              <!-- %%%%%%%%%%%%% FEATURED SLIDESHOWS Section %%%%%%%% -->
+                          <section class="featured-slideshows px-3" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">
+                          <a href="#" class="d-block mb-3" style="width: 250px; margin: 0 auto; ">
+                                 <div class="n-title">
+                                     <span class="icon-n"></span>
+                                    <h5><strong>FEATURED SLIDESHOWS</strong></h5>
+                                 </div>
+                             </a>
+                             <div class="container-fluid">
+                               <div class="row">
+                                   <article class="col-md-4" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                                     <a href="#">
+                                       <img src="./assets/images/oscar-11.jpg" class="w-100" alt="">
+                                     </a>
+                                     <a href="" class="font-weight-bold mt-2 mb-4 d-block">The Revamped Oscar de la Renta Is All the Rage</a>                             
+                                   </article>
+                                   <article class="col-md-4" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                                     <a href="#">
+                                       <img src="./assets/images/oscar-11.jpg" class="w-100" alt="">
+                                     </a>
+                                     <a href="" class="font-weight-bold mt-2 mb-4 d-block">The Revamped Oscar de la Renta Is All the Rage</a>                             
+                                   </article>
+                                   <article class="col-md-4" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                                     <a href="#">
+                                       <img src="./assets/images/oscar-11.jpg" class="w-100" alt="">
+                                     </a>
+                                     <a href="" class="font-weight-bold mt-2 mb-4 d-block">The Revamped Oscar de la Renta Is All the Rage</a>                             
+                                   </article>
+                                   <article class="col-md" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                                       <a href="#">
+                                         <img src="./assets/images/oscar-11.jpg" class="w-100" alt="">
+                                       </a>
+                                       <a href="" class="font-weight-bold mt-2 mb-4 d-block">The Revamped Oscar de la Renta Is All the Rage</a>                             
+                                   </article>
+                                   <article class="col-md" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                                       <a href="#">
+                                         <img src="./assets/images/oscar-11.jpg" class="w-100" alt="">
+                                       </a>
+                                       <a href="" class="font-weight-bold mt-2 mb-4 d-block">The Revamped Oscar de la Renta Is All the Rage</a>                             
+                                   </article>
+                                   <article class="col-md" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                                       <a href="#">
+                                         <img src="./assets/images/oscar-11.jpg" class="w-100" alt="">
+                                       </a>
+                                       <a href="" class="font-weight-bold mt-2 mb-4 d-block">The Revamped Oscar de la Renta Is All the Rage</a>                             
+                                   </article>
+                                </div>
+                          </section>
+    
+                  <!-- %%%%%%%%%%%%% U.S Section %%%%%%%% -->
+                            <section style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">
+                              <div class="row us">  
+                                  <div class="col-12">
+                                      <h2 class="block-title"><a href="">U.S.</a></h2>
+                                  </div>
+                                  <div class="col-sm-12 col-md-4 feature2">
+                                    <article class="col-md" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                                      <a href="#">
+                                        <img src="./assets/images/rosa-parish.jpg" class="w-100" alt="">
+                                      </a>
+                                      <a href="" class="font-weight-bold mt-2 mb-4 d-block">California Catholic Priest Stole Thousands from Parish Collections</a>                             
+                                  </article>
+                                  </div>
+                                  <div class="col-sm-12 col-md-4 feature2">
+                                    <article class="col-md" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                                      <a href="#">
+                                        <img src="./assets/images/rosa-parish.jpg" class="w-100" alt="">
+                                      </a>
+                                      <a href="" class="font-weight-bold mt-2 mb-4 d-block">California Catholic Priest Stole Thousands from Parish Collections</a>                             
+                                  </article>
+                                  </div>
+                                  <div class="col-sm-12 col-md-4">
+                                      <div class="feature2 us-rightcol">
+                                          <article class="clearfix latest-news" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">
+                                              <div class="image">
+                                                  <a href="">
+                                                      <div>
+                                                        <img src="./assets/images/police-light-car-cruise-stock-getty.jpg" alt="">
+                                                      </div>
+                                                  </a>
+                                              </div>
+                                              <h4>
+                                                  <a href="" >Florida Officers Charge Georgia Gang With Kidnapping Alabama Man</a>
+                                              </h4>
+                                          </article>
+                                          <article class="clearfix latest-news" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">
+                                              <div class="image">
+                                                  <a href="">
+                                                      <div>
+                                                          <img src="./assets/images/police-light-car-cruise-stock-getty.jpg" alt="">
+                                                      </div>
+                                                  </a>
+                                              </div>
+                                              <h4>
+                                                  <a href="">Florida Officers Charge Georgia Gang With Kidnapping Alabama Man</a>
+                                              </h4>
+                                          </article>
+                                          <article class="clearfix latest-news" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">
+                                              <div class="image">
+                                                  <a href="">
+                                                      <div>
+                                                          <img src="./assets/images/police-light-car-cruise-stock-getty.jpg" alt="">
+                                                      </div>
+                                                  </a>
+                                              </div>
+                                              <h4>
+                                                  <a href="">Florida Officers Charge Georgia Gang With Kidnapping Alabama Man</a>
+                                              </h4>
+                                          </article>
+                                      </div>
+                                  </div>
+                  
+                              </div>
+                          </section>
+
+                          <!-- %%%%%%%%%%%%% world Section %%%%%%%% -->
+                          <section style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">
+                            <div class="row us">  
+                                <div class="col-12">
+                                    <h2 class="block-title"><a href="">World</a></h2>
+                                </div>
+                                <div class="col-sm-12 col-md-4 feature2">
+                                  <article class="col-md" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                                    <a href="#">
+                                      <img src="./assets/images/iran-navy-oil-tanker-gulf.jpg" class="w-100" alt="">
+                                    </a>
+                                    <a href="" class="font-weight-bold mt-2 mb-4 d-block">U.S.-Iran Oil Crisis: What It Means for Them and the Rest of the World</a>                             
+                                </article>
+                                </div>
+                                <div class="col-sm-12 col-md-4 feature2">
+                                  <article class="col-md" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                                    <a href="#">
+                                      <img src="./assets/images/iran-navy-oil-tanker-gulf.jpg" class="w-100" alt="">
+                                    </a>
+                                    <a href="" class="font-weight-bold mt-2 mb-4 d-block">U.S.-Iran Oil Crisis: What It Means for Them and the Rest of the World</a>                             
+                                </article>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="feature2 us-rightcol">
+                                        <article class="clearfix latest-news" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">
+                                            <div class="image">
+                                                <a href="">
+                                                    <div>
+                                                      <img src="./assets/images/gettyimages-1139520533.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <h4>
+                                                <a href="" >Ukraine's Comedian President's Party Set to Have More Control of Parliament</a>
+                                            </h4>
+                                        </article>
+                                        <article class="clearfix latest-news" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">
+                                            <div class="image">
+                                                <a href="">
+                                                    <div>
+                                                        <img src="./assets/images/gettyimages-1139520533.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <h4>
+                                                <a href="">Ukraine's Comedian President's Party Set to Have More Control of Parliament</a>
+                                            </h4>
+                                        </article>
+                                        <article class="clearfix latest-news" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">
+                                            <div class="image">
+                                                <a href="">
+                                                    <div>
+                                                        <img src="./assets/images/gettyimages-1139520533.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <h4>
+                                                <a href="">Ukraine's Comedian President's Party Set to Have More Control of Parliament</a>
+                                            </h4>
+                                        </article>
+                                    </div>
+                                </div>
+                
+                            </div>
+                        </section>
+
+
+
+                        <!-- %%%%%%%%%%%%% Sport Section %%%%%%%% -->
+                        <section style="border-bottom: 1px solid rgba(170, 170, 170, 0.609); margin-bottom: 60px;">
+                          <div class="row us">  
+                              <div class="col-12">
+                                  <h2 class="block-title"><a href="">Sport</a></h2>
+                              </div>
+                              <div class="col-sm-12 col-md-4 feature2">
+                                <article class="col-md" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                                  <a href="#">
+                                    <img src="./assets/images/arsenal.jpg" class="w-100" alt="">
+                                  </a>
+                                  <a href="" class="font-weight-bold mt-2 mb-4 d-block">Real Madrid vs. Arsenal: Where to Watch, Live Stream, Team News and Odds</a>                             
+                              </article>
+                              </div>
+                              <div class="col-sm-12 col-md-4 feature2">
+                                <article class="col-md" style="border-top: 1px solid rgba(170, 170, 170, 0.609);" >
+                                  <a href="#">
+                                    <img src="./assets/images/arsenal.jpg" class="w-100" alt="">
+                                  </a>
+                                  <a href="" class="font-weight-bold mt-2 mb-4 d-block">Real Madrid vs. Arsenal: Where to Watch, Live Stream, Team News and Odds</a>                             
+                              </article>
+                              </div>
+                              <div class="col-sm-12 col-md-4">
+                                  <div class="feature2 us-rightcol">
+                                      <article class="clearfix latest-news" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">
+                                          <div class="image">
+                                              <a href="">
+                                                  <div>
+                                                    <img src="./assets/images/katie-ledecky.jpg" alt="">
+                                                  </div>
+                                              </a>
+                                          </div>
+                                          <h4>
+                                              <a href="" >Copa Libertadores: Where to Watch Round of 16, Live Stream, Schedule, Odds</a>
+                                          </h4>
+                                      </article>
+                                      <article class="clearfix latest-news" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">
+                                          <div class="image">
+                                              <a href="">
+                                                  <div>
+                                                      <img src="./assets/images/katie-ledecky.jpg" alt="">
+                                                  </div>
+                                              </a>
+                                          </div>
+                                          <h4>
+                                              <a href="">Copa Libertadores: Where to Watch Round of 16, Live Stream, Schedule, Odds</a>
+                                          </h4>
+                                      </article>
+                                      <article class="clearfix latest-news" style="border-bottom: 1px solid rgba(170, 170, 170, 0.609);">
+                                          <div class="image">
+                                              <a href="">
+                                                  <div>
+                                                      <img src="./assets/images/katie-ledecky.jpg" alt="">
+                                                  </div>
+                                              </a>
+                                          </div>
+                                          <h4>
+                                              <a href="">Copa Libertadores: Where to Watch Round of 16, Live Stream, Schedule, Odds</a>
+                                          </h4>
+                                      </article>
+                                  </div>
+                              </div>
+              
+                          </div>
+                      </section>
+
+
+                           
+                     
+   
+
+            
+
+
+        <footer class="footer-bottom">
+          <div class="setInflex footer_content">
+            <div class="setInflex item-align">
+              <a class="logoSite" href="#">Newsweek</a>
+              <p class="copyright">
+                &copy; 2018 <a href="#"> Newsweek llc </a>
+              </p>
+            </div>
+            <ul class="setInflex socIcon">
+              <li>
+                <a href="#" class="social-media-icon">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-media-icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-media-icon">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-media-icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-media-icon">
+                  <i class="fab fa-tumblr"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-media-icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="ft-links">
+            <div class="row ft-menus">
+            <div class="ft-links-menu fx-content col-md-7">
+              <ul>
+                <li class="footerEnd"> <a href="#">About Us</a> </li>
+                <li class="footerEnd"> <a href="#">Corrections</a> </li>
+                <li class="footerEnd"> <a href="#">Contact Us</a> </li>
+                <li class="footerEnd"> <a href="#">Newsweek Media Group</a> </li>
+                <li class="footerEnd"> <a href="#">Travel</a> </li>
+                <li class="footerEnd"> <a href="#">Advertise</a> </li>
+                <li class="footerEnd"> <a href="#">Copright</a> </li>
+                <li class="footerEnd"> <a href="#">Terms & Conditions</a> </li>
+                <li class="footerEnd"> <a href="#">Privacy Policy</a> </li>
+                <li class="footerEnd"> <a href="#">Cookie Policy</a> </li>
+                <li class="footerEnd"> <a href="#">Terms of Sale</a> </li>
+                <li class="footerEnd"> <a href="#">Archive</a> </li>
+                <li> <a href="#">Consent preferences</a> </li>
+              </ul>
+            </div>
+            <div class="ft-edition col-md-4 offset-md-1">
+              <label> <strong> Editions: </strong> </label>
+              <ul>
+                <li class="footerEnd"> <a href="#">U.S. Edition</a> </li>
+                <li class="footerEnd"> <a href="#">Middle East</a> </li>
+                <li class="footerEnd"> <a href="#">日本</a> </li>
+                <li class="footerEnd"> <a href="#">한국</a> </li>
+                <li class="footerEnd"> <a href="#">Pakistan</a> </li>
+                <li class="footerEnd"> <a href="#">Polska</a> </li>
+                <li> <a href="#">Romania</a> </li>
+              </ul>
+            </div>
+           </div>
+        </div>
+        
+        </footer>
     </div>
+
+    <script src="index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
